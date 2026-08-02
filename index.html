@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Static Hub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Inter,Arial,sans-serif;
+}
+
+body{
+
+    background:#07090f;
+    color:#fff;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+
+/* MAIN */
+
+.container{
+
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+
+}
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+    padding:80px 0 40px;
+    text-align:center;
+
+}
+
+
+.logo{
+
+    font-size:42px;
+    font-weight:800;
+    letter-spacing:-2px;
+
+}
+
+
+.logo span{
+
+    color:#638cff;
+
+}
+
+
+
+.creator{
+
+    margin-top:12px;
+    color:#8d95aa;
+    font-size:16px;
+
+}
+
+
+
+.version{
+
+    display:inline-block;
+    margin-top:20px;
+    padding:6px 14px;
+    background:#101521;
+    border:1px solid #20283a;
+    border-radius:20px;
+    color:#9ca6bb;
+    font-size:13px;
+
+}
+
+
+
+
+
+
+
+/* SCRIPT */
+
+
+.script-box{
+
+    margin:40px auto 0;
+
+    background:#0d1118;
+
+    border:1px solid #20283a;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    max-width:850px;
+
+}
+
+
+
+.script-title{
+
+    text-align:left;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+
+
+textarea{
+
+    width:100%;
+
+    height:120px;
+
+    resize:none;
+
+    background:#06080d;
+
+    border:1px solid #20283a;
+
+    border-radius:12px;
+
+    color:#6cff9b;
+
+    padding:15px;
+
+    font-size:13px;
+
+}
+
+
+
+.copy{
+
+    width:100%;
+
+    margin-top:14px;
+
+    padding:13px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#638cff;
+
+    color:white;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+
+
+.copy:hover{
+
+    opacity:.9;
+
+}
+
+
+
+
+
+/* BUTTON */
+
+
+.discord{
+
+    margin-top:20px;
+
+}
+
+
+
+.discord a{
+
+    display:inline-block;
+
+    padding:12px 25px;
+
+    background:#5865F2;
+
+    border-radius:12px;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+
+/* SECTION */
+
+
+.section{
+
+    padding:60px 0;
+
+}
+
+
+.heading{
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+    font-weight:700;
+
+}
+
+
+
+
+
+/* GAMES */
+
+
+.games{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.game{
+
+    background:#0d1118;
+
+    border:1px solid #20283a;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.25s;
+
+}
+
+
+
+.game:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#638cff;
+
+}
+
+
+
+.game img{
+
+    width:100%;
+
+    height:170px;
+
+    object-fit:cover;
+
+}
+
+
+
+.game-content{
+
+    padding:18px;
+
+}
+
+
+
+.game-name{
+
+    font-size:20px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.status{
+
+    display:inline-block;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    background:#10251a;
+
+    color:#6cff9b;
+
+    border:1px solid #21452f;
+
+    font-size:12px;
+
+}
+
+
+
+
+
+/* UPDATES */
+
+
+.update{
+
+    background:#0d1118;
+
+    border:1px solid #20283a;
+
+    padding:20px;
+
+    border-radius:16px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.update h3{
+
+    font-size:17px;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.update p{
+
+    color:#8d95aa;
+
+    font-size:14px;
+
+}
+
+
+
+
+footer{
+
+    text-align:center;
+
+    padding:40px 0;
+
+    color:#667085;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+.logo{
+
+font-size:34px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<div class="container">
+
+
+<section class="hero">
+
+
+<div class="logo">
+
+Static <span>Hub</span>
+
+</div>
+
+
+<div class="creator">
+
+by samo & ohnezesty
+
+</div>
+
+
+<div class="version">
+
+Version 1.1
+
+</div>
+
+
+
+
+
+<div class="script-box">
+
+
+<div class="script-title">
+
+Script
+
+</div>
+
+
+
+<textarea id="scriptText" readonly>loadstring(game:HttpGet("https://gist.githubusercontent.com/pihousdfg/0f5dc78c10499dba80312c0281cab518/raw/640eaa8bbf7c73e659ad0faa9e62c9fdf94f41f8/gistfile1.txt"))()</textarea>
+
+
+
+<button class="copy" id="copyButton" onclick="copyScript()">
+
+Copy Script
+
+</button>
+
+
+
+</div>
+
+
+
+
+<div class="discord">
+
+<a href="https://discord.gg/7gW8xXampn" target="_blank">
+
+Join Discord
+
+</a>
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section class="section">
+
+
+<div class="heading">
+
+Supported Games
+
+</div>
+
+
+
+<div class="games">
+
+
+
+<div class="game">
+
+
+<img src="https://tr.rbxcdn.com/180DAY-0237a1d1367f865bce30a6a595eab745/768/432/Image/Webp/noFilter">
+
+
+<div class="game-content">
+
+
+<div class="game-name">
+
+🍋 Sell Lemons
+
+</div>
+
+
+<div class="status">
+
+● Working
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="game">
+
+
+<img src="https://tr.rbxcdn.com/180DAY-6c75ae485b6b139bef59b65de9b58c72/768/432/Image/Webp/noFilter">
+
+
+<div class="game-content">
+
+
+<div class="game-name">
+
+🔫 Project Delta
+
+</div>
+
+
+<div class="status">
+
+● Working
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="section">
+
+
+<div class="heading">
+
+Updates
+
+</div>
+
+
+
+
+<div class="update">
+
+<h3>
+v1.1
+</h3>
+
+<p>
+Website redesign and supported game updates.
+</p>
+
+</div>
+
+
+
+<div class="update">
+
+<h3>
+Coming Soon
+</h3>
+
+<p>
+More games will be added.
+</p>
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<footer>
+
+© 2026 Static Hub
+
+</footer>
+
+
+</div>
+
+
+
+
+
+
+<script>
+
+function copyScript(){
+
+let text=document.getElementById("scriptText").value;
+
+let button=document.getElementById("copyButton");
+
+
+navigator.clipboard.writeText(text);
+
+
+button.innerHTML="Copied ✓";
+
+
+setTimeout(()=>{
+
+button.innerHTML="Copy Script";
+
+},2000);
+
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>
